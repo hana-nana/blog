@@ -1,5 +1,12 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# 캐시 / 시스템 파일
+.DS_Store
+node_modules/
+dist/
+build/
+
+# IDE / 에디터 설정
+.vscode/
+.idea/
+
+# GitHub Actions 빌드 결과물
+_site/
