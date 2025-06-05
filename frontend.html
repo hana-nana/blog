@@ -6,6 +6,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <p>카테고리 테스트</p>
-</body>
+  <h1>카테고리 제목</h1>
+  <ul id="post-list"></ul>
+  <script>
+    const posts = [
+      {title: "제목1", file: "post1.html"},
+      {title: "제목2", file: "post2.html"},
+    ];
+
+    const list = document.getElementById("post-list");
+    posts.forEach(post => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="./posts/${post.file}">${post.title}</a>`
+      list.appendChild(li);
+    })
+  </script>
+  </body>
 </html>
